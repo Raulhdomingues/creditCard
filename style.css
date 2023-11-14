@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --font-principal: 'Space Grotesk', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-principal);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-lateral {
+    height: 100%;
+    width: 483px;
+    background-image: url(/img/lateral-gradiente.png);
+    background-size:cover;
+}
+
+.exp-dinamico {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+
+.card-name {
+    text-transform: uppercase;
+}
+
+.card-number {
+    color: #FFF;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: 3.422px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 381px;
+    margin-left: 227px;
+}
+
+form .data-client {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    color: #21092F;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    margin-top: 26px;
+}
+
+
+.data-client input {
+    width: 381px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+    outline: none;
+    font-size: 20px;
+    padding-left: 16px;
+}
+
+.exp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#exp {
+    margin-right: 10px;
+}
+
+input::placeholder {
+    opacity: 0.25;
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+.exp-1 input {
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+    margin-top: 9px;
+    outline: none;
+    font-size: 20px;
+}
+
+.exp-date {
+    margin-top: -8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.exp-2 input {
+    margin-right: -18px;
+    width: 191px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+    outline: none;
+    font-size: 20px;
+}
+
+.cartoes {
+    width: 541px;
+    height: 527px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+ .frente-cartao {
+    width: 447px;
+    height: 245px;
+    margin-bottom: 37px;
+    margin-left: -330px;
+    background-image: url(img/fundo-frente-cartao.png);
+ }
+
+ .verso-cartao {
+    width: 447px;
+    height: 245px;
+    background-image: url(img/verso-cartao.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -230px;
+ }
+
+ .tarja-cartao {
+    margin-top: 23px;
+ }
+
+ .tarja-cvc {
+    width: 361px;
+    height: 38px;
+    background: #ADB5BE;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 16px;
+    border-radius: 4px;
+    margin-top: 24px;
+ }
+
+ .img-detalhe-cartao {
+    margin: 33px 0 47px 0;
+ }
+
+ .bandeira-cartao {
+    margin: 28px 0 0 32px;
+ }
+
+ button {
+    margin-top: 40px;
+    width: 381px;
+    height: 53px;
+    border-radius: 8px;
+    background:#21092F;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+ }

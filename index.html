@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Formulário cartão</title>
+</head>
+<body>
+    <main>
+
+        <div class="img-lateral"></div>
+
+
+
+        <div class="cartoes">
+
+            <div class="frente-cartao">
+                <img class="bandeira-cartao" src="/img/bandeira-cartao.png">
+                <div class="card-number">0000 0000 0000 0000 </div>
+                <div class="exp-dinamico">
+                    <div class="card-name">Raul Domingues</div>
+                    <div class="card-exp"><span id="exp-mes">10</span>/<span id="exp-ano">91</span></div>
+                </div>
+            </div>
+
+            <div class="verso-cartao">
+                <img class="tarja-cartao" src="/img/tarja-cartao.png">
+                <div class="tarja-cvc">000</div>
+                <img class="img-detalhe-cartao" src="/img/detalhe-cartao.png">
+            </div>
+
+        </div>
+
+
+
+        <form>
+
+
+            <div class="data-client">
+
+                <label for="name">nome do titular</label>
+                <input type="text" id="name" required maxlength="25" placeholder="ex. Raul Domingues">
+
+                <label for="number">numero do cartao</label>
+                <div x-data="">
+                    <input type="text" id="number" inputmode="numeric" placeholder="ex. 1234 5678 9123 0000" maxlength="19" x-mask="9999 9999 9999 9999">
+                </div>
+            </div>
+
+
+            <div class="exp">
+
+
+                <div class="exp-1">
+                    <label>data de exp. (mm/aa)</label>
+                    <div class="exp-date">
+                        <input class="mes" type="text" id="exp" pattern="[0-9]*" inputmode="numeric" placeholder="  MM" required>
+                        <input class="ano" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="  AA" required>
+                    </div>
+                </div>
+
+                <div class="exp-2">
+                    <label for="cvc">cvc</label>
+                    <input type="text" id="cvc" pattern="[0-9]*" inputmode="numeric" placeholder="  ex. 123" maxlength="3" required>
+                </div>
+
+
+            </div>
+
+
+            <button type="submit">Confirmar</button>
+        </form>
+    </main>
+
+</body>
+</html>

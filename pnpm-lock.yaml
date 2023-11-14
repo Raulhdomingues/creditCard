@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@alpinejs/mask':
+    specifier: ^3.13.2
+    version: 3.13.2
+
+packages:
+
+  /@alpinejs/mask@3.13.2:
+    resolution: {integrity: sha512-62Oa5fHAKHe1fU5l4KIBHDinvQuOybObwITcpaq4Hjfl+GuRXp1gCnaPTkJTo5jHQ6r4UXbqzrIBkjg1qXUkzA==}
+    dev: false
