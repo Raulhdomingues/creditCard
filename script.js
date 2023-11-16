@@ -1,5 +1,3 @@
-const alpine = require('@alpinejs/mask');
-
 const nome = document.querySelector('#name');
 const numero = document.querySelector('#number');
 const mes = document.querySelector('.mes');
@@ -13,7 +11,6 @@ const expiracaoAno = document.querySelector('#exp-ano');
 
 const codigoSeguranca = document.querySelector('.tarja-cvc');
 
-
 numero.addEventListener('input', () => {
     numeroCartao.textContent = numero.value;
 })
@@ -26,12 +23,10 @@ mes.addEventListener('input', () => {
     expiracaoMes.textContent = mes.value;
 })
 
-
 ano.addEventListener('input', () => {
     expiracaoAno.textContent = ano.value;
 })
 
 cvc.addEventListener('input', () => {
     codigoSeguranca.textContent = cvc.value;
-})
-
+});
